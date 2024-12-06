@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="myButton1">Button-1</button>
+    <button id="myButton2">Button-2</button>
+
+    <script>
+        const btn1 = document.querySelector("#myButton1");
+        const btn2 = document.querySelector("#myButton2");
+
+        console.dir(btn1)
+        console.dir(btn2)
+        
+        btn1.addEventListener("dblclick", ()=>{
+            alert(btn1.textContent);
+        })
+        btn2.addEventListener("dblclick", ()=>{
+            alert(btn2.textContent);
+        })
+    </script>
+</body>
+</html>
